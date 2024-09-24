@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
-    <h2>Login</h2>
+    <div class='container'>   
 
     <form id="loginForm">
         <label for="username">Usuário:</label><br>
@@ -39,13 +40,17 @@
                 message.textContent = "Login bem-sucedido!";
                 message.style.color = "green";
                 
-                window.location.href = "pag2.html"; 
+                window.location.href = "form.html"; 
             } else {
                 message.textContent = "Usuário ou senha inválidos.";
                 message.style.color = "red";
             }
         });
+    
+
+
     </script>
 
+</div>
 </body>
 </html>
