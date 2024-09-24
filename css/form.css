@@ -21,7 +21,7 @@ form {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px; /* Aumenta a largura máxima */
+    max-width: 600px; 
 }
 
 label {
@@ -42,17 +42,20 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #4486f9;
     color: white;
     border: none;
-    padding: 15px 20px;
+    padding: 25px 20px;
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
+    display: block; 
+    margin: 0 auto; 
+   
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #4486f9;
 }
 
 
