@@ -8,13 +8,32 @@
 </head>
 <body>
 
-    <div class='container'>   
-        <button id="googleLogin">Login com Google</button>
-    </div>
-   
-    <script type="module" src="../js/login.js"></script>
+    <div class="container">   
+        <!-- Seção de Login com Usuário -->
+        <div class="user-login">
+            <h2>Login com Usuário</h2>
+            <form id="userLoginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
 
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                <button type="submit" id="userLoginButton">Login</button>
+                <button id="googleLogin">
+                    <img src="./icons8-google-logo-60.png" alt="Google Icon" class="icon"> 
+                    Login com Google 
+                </button>
+            </form>
+        </div>
+    </div>
+        
+        
+        
+             
+        
     
+    <script type="module" src="../js/login.js"></script>
 
 </body>
 </html>
