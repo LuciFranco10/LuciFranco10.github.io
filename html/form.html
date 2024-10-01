@@ -6,31 +6,40 @@
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="../css/form.css">
     
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Cy_GuaqIjSmrw_o08");  
+            console.log("EmailJS inicializado");
+        })();
+    </script>
 </head>
-
 <body>
-    <div class="Container">
-    
-        <form action="https://formsubmit.co/log_franco@hotmail.com" method="POST"> 
+    <div class="container">
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Defina uma senha com 4 dígitos" required>
+
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
 
     
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-
-        <input type="submit" value="Enviar">
-
-        <input type="hidden" name="_subject" value="Email teste!">
-        <input type="text" name="honey" style="display:none">
-        <input type="hidden" name="captcha" value="false">
-    </form>
-
-</div>
-<script src="./server.js"></script>
+    <script type="module" src="../js/form.js"></script> 
 </body>
 </html>

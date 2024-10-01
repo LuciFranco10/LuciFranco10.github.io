@@ -60,15 +60,14 @@ input:focus {
 
 button {
     width: 100%;
-    padding: 15px; 
-    background-color: #4486f9;
+    padding: 20px;
+    background-color: #da1bbe;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px; 
-    transition: background-color 0.3s; 
 }
+
 
 button:hover {
     background-color: #4486f8;
@@ -77,16 +76,16 @@ button:hover {
 #message {
     text-align: center;
     margin-top: 10px;
-    color: #dc3545; /* Cor de texto para mensagens de erro */
+    color: #dc3545;
 }
 
-/* Tornar o layout responsivo */
+
 @media (max-width: 768px) {
     form {
-        padding: 20px; /* Ajustando o padding em telas menores */
+        padding: 20px; 
     }
 
     h2 {
-        font-size: 24px; /* Ajustando o tamanho do título */
+        font-size: 24px; 
     }
 }
