@@ -14,3 +14,25 @@ document.getElementById("googleLogin").addEventListener("click", function() {
     });
 });
 
+
+
+
+localStorage.setItem('username', 'luciane.franco');
+localStorage.setItem('password', '1234');
+
+
+document.getElementById('userLoginForm').addEventListener('submit', function (event) {
+    event.preventDefault(); 
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+   
+    if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
+        alert('Login bem-sucedido!');
+        window.location.href = 'form.html';
+       
+    } else {
+        alert('Usuário ou senha incorretos.');
+    }
+});
