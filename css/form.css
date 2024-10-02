@@ -6,8 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: #f4f4f4; */
-    background-color: #4CAF50;
+    background-color: #FFE4E1;
     background-size: cover; 
     background-position: center; 
 }
@@ -44,7 +43,7 @@ input[type="submit"] {
     background-color: #da1bbe;
     color: white;
     border: none;
-    padding: 15px 20px;
+    padding: 20px;
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
@@ -57,3 +56,17 @@ input[type="submit"]:hover {
     background-color: #4486f8;
 }
 
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
