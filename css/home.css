@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FFE4E1;
+    background-color: #6d6dab;
     font-family: 'Arial', sans-serif;
     background-size: cover;
     background-position: center;
@@ -21,10 +21,10 @@ body {
     
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
     padding: 50px;
     border-radius: 12px;
-    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+   
     width: 100%;
     max-width: 400px;
 }
@@ -37,10 +37,10 @@ body {
 
 
 form {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,19 +50,20 @@ form {
 h2, h4 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 label {
     font-weight: bold;
     align-self: flex-start;
     margin-bottom: 5px;
-    color: #555;
+    color: #ffffff;
 }
 
 input {
     width: 100%;
     padding: 15px;
+    background-color: #ffffffea;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -70,14 +71,17 @@ input {
 }
 
 input:focus {
-    border-color: #4CAF50;
+    border-color: #ffffff;
     outline: none;
 }
 
 button {
     width: 100%;
-    padding: 20px;
-    background-color: #da1bbe;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #772a9b;
+    font-weight: bold;
+    font-size: 15px;
     color: white;
     border: none;
     border-radius: 5px;
@@ -85,15 +89,18 @@ button {
 }
 
 button:hover {
-    background-color: #4486f8;
+    background-color: #b28ec5;
+    color:#772a9b;
+    
+    
 }
 
 
 
 
 #googleLogin {
-    background-color: #ffffff; 
-    color: rgb(229, 0, 236);
+    background-color: transparent; 
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 13.5px;
     padding: 2px;
@@ -101,15 +108,15 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center; 
     justify-content: center; 
 }
 
 #googleLogin .icon {
-    width: 28px; 
-    height: 28px; 
+    width: 35px; 
+    height: 35px; 
     margin-right: 10px;
 }
 
