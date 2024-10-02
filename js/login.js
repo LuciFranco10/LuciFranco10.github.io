@@ -28,11 +28,11 @@ document.getElementById('userLoginForm').addEventListener('submit', function (ev
     const password = document.getElementById('password').value;
 
    
-    if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
-        alert('Login bem-sucedido!');
-        window.location.href = 'form.html';
+     if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
+        //  alert('Login bem-sucedido!');
+         window.location.href = 'form.html';
        
-    } else {
+     } else {
         alert('Usuário ou senha incorretos.');
-    }
-});
+     }
+ });
