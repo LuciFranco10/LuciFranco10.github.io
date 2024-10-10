@@ -1,4 +1,4 @@
-import { auth } from './firebase-config.js';
+import { auth } from './firebase-config.js';nde o objeto auth
 import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
 
 const provider = new GoogleAuthProvider();
@@ -29,7 +29,7 @@ document.getElementById('userLoginForm').addEventListener('submit', function (ev
 
    
      if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
-        //  alert('Login bem-sucedido!');
+        
          window.location.href = 'form.html';
        
      } else {
