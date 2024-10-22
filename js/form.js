@@ -17,8 +17,8 @@ form.addEventListener('submit', async (e) => {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
 
-        await sendEmailVerification(user);
-        alert('Verifique seu e-mail para confirmar o cadastro.');
+        // await sendEmailVerification(user);
+        // alert('Verifique seu e-mail para confirmar o cadastro.');
         
        
         const docRef = await addDoc(collection(db, "cadastros"), {
@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
             email: email,
         });
 
-        alert("Cadastro realizado com sucesso!");
+        // alert("Cadastro realizado com sucesso!");
         console.log("Documento salvo com ID: ", docRef.id);
 
         
@@ -35,7 +35,7 @@ form.addEventListener('submit', async (e) => {
         form.reset();
     } catch (e) {
         console.error("Erro ao realizar o cadastro: ", e.code, e.message);
-        alert("Erro ao realizar o cadastro. Tente novamente. Detalhes: " + e.message);
+        // alert("Erro ao realizar o cadastro. Tente novamente. Detalhes: " + e.message);
     }
 });
 
