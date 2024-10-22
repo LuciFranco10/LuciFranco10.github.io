@@ -59,7 +59,7 @@ export async function sendEmail(nome, telefone, email, password) {
         alert("Erro ao enviar o email. Tente novamente.");
     }
 
-
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     const voltarBtn = document.getElementById('voltar');
@@ -69,4 +69,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'menu.html'; 
     });
 });
+
 
