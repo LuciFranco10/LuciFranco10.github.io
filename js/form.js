@@ -52,7 +52,7 @@ export async function sendEmail(nome, telefone, email, password) {
 
         try {
         const response = await emailjs.send("service_fa7o63i", "template_a14tyih", templateParams);
-        alert("Email enviado com sucesso!");
+        // alert("Email enviado com sucesso!");
         console.log("Email enviado", response.status, response.text);
     } catch (error) {
         console.error("Erro ao enviar email:", error);
