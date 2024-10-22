@@ -5,14 +5,14 @@ const provider = new GoogleAuthProvider();
 
 
 
-document.getElementById("googleLogin").addEventListener("click", function() {
-    signInWithPopup(auth, provider).then((result) => {
-        console.log(result.user);
-        window.location.href = "form.html"; 
-    }).catch((error) => {
-        console.error('Erro ao fazer login com Google:', error);
-    });
-});
+// document.getElementById("googleLogin").addEventListener("click", function() {
+//     signInWithPopup(auth, provider).then((result) => {
+//         console.log(result.user);
+//         window.location.href = "form.html"; 
+//     }).catch((error) => {
+//         console.error('Erro ao fazer login com Google:', error);
+//     });
+// });
 
 
 
@@ -30,7 +30,7 @@ document.getElementById('userLoginForm').addEventListener('submit', function (ev
    
      if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
         
-         window.location.href = 'form.html';
+         window.location.href = 'menu.html';
        
      } else {
         alert('Usuário ou senha incorretos.');

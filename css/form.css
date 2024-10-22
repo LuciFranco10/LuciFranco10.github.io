@@ -82,3 +82,14 @@ input[type="submit"]:hover {
         padding: 20px;
     }
 }
+
+
+
+.estiloMapa {
+    width: 100%;
+    max-width: 600px; 
+    height: 400px; 
+    margin: 0 auto; 
+    border: 2px solid #ccc; 
+    
+}

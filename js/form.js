@@ -59,3 +59,6 @@ export async function sendEmail(nome, telefone, email, password) {
         // alert("Erro ao enviar o email. Tente novamente.");
     }
 }
+
+
+
