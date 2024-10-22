@@ -5,14 +5,14 @@ const provider = new GoogleAuthProvider();
 
 
 
-// document.getElementById("googleLogin").addEventListener("click", function() {
-//     signInWithPopup(auth, provider).then((result) => {
-//         console.log(result.user);
-//         window.location.href = "form.html"; 
-//     }).catch((error) => {
-//         console.error('Erro ao fazer login com Google:', error);
-//     });
-// });
+document.getElementById("googleLogin").addEventListener("click", function() {
+    signInWithPopup(auth, provider).then((result) => {
+        console.log(result.user);
+        window.location.href = "menu.html"; 
+    }).catch((error) => {
+        console.error('Erro ao fazer login com Google:', error);
+    });
+});
 
 
 
@@ -36,3 +36,23 @@ document.getElementById('userLoginForm').addEventListener('submit', function (ev
         alert('Usuário ou senha incorretos.');
      }
  });
+
+
+
+ document.getElementById('userLoginForm').addEventListener('submit', function (event) {
+    event.preventDefault(); 
+
+    const email = document.getElementById('email').value;  
+
+    // Autenticar com Firebase
+    signInWithEmailAndPassword(auth, email)
+    .then((userCredential) => {
+        const user = userCredential.user;
+        console.log('Login com sucesso:', user);
+        window.location.href = 'form.html';
+    })
+    .catch((error) => {
+        console.error('Erro ao fazer login:', error);
+        alert('Erro ao fazer login. Verifique suas credenciais.');
+    });
+});
