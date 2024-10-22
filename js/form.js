@@ -58,5 +58,15 @@ export async function sendEmail(nome, telefone, email, password) {
         console.error("Erro ao enviar email:", error);
         alert("Erro ao enviar o email. Tente novamente.");
     }
-}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const voltarBtn = document.getElementById('voltar');
+        
+    voltarBtn.addEventListener('click', function () {
+       
+        window.location.href = 'menu.html'; 
+    });
+});
 
