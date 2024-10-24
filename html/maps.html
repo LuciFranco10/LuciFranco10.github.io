@@ -6,6 +6,18 @@
     <title>Geocoding Service</title>
     <link rel="stylesheet" href="../css/maps.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmkNaQ9vbljfqjnyrzb3186RDn6zswmc0&libraries=places&callback=initMap&v=weekly" defer></script>
+
+    <script type="text/javascript">
+       
+        if (sessionStorage.getItem('isAuthenticated') !== 'true') {
+            
+            window.location.href = 'index.html';
+        }
+    </script>
+
+
+
+
 </head>
 
 <body>

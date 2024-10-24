@@ -27,15 +27,15 @@ document.getElementById('userLoginForm').addEventListener('submit', function (ev
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-   
-     if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
+    if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
         
-         window.location.href = 'menu.html';
-       
-     } else {
+        sessionStorage.setItem('isAuthenticated', 'true'); 
+        window.location.href = 'menu.html';
+    } else {
         alert('Usuário ou senha incorretos.');
-     }
- });
+    }
+});
+
 
 
 
